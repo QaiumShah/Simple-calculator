@@ -19,7 +19,7 @@ function add() {
     currentResult += enteredNum;
     createAndWriteOutput('+', initialResult, enteredNum);
     logEntries.push(enteredNum);
-    console.log(logEntries);
+    console.log( logEntries,logEntries[0]);
 }
 
 function subtract() {
