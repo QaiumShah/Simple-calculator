@@ -18,8 +18,14 @@ function add() {
     const initialResult = currentResult;
     currentResult += enteredNum;
     createAndWriteOutput('+', initialResult, enteredNum);
-    logEntries.push(enteredNum);
-    console.log( logEntries,logEntries[0]);
+    const logEntry = {
+        operation: 'ADD',
+        prevResult: initialResult,
+        number: enteredNum,
+        result: currentResult
+    };
+    logEntries.push(logEntry);
+    console.log(logEntries);
 }
 
 function subtract() {
