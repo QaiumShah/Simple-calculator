@@ -13,6 +13,8 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
     outputResult(currentResult, calcDescription); // from vendor.js
 }
 
+function nothing(){}
+
 function writeToLog(operationIdentifier, previousResult, enterednumber, finalResult){
     const logEntry = {
         operation: operationIdentifier,
